@@ -6,20 +6,35 @@
   <title>Demo</title>
 </head>
 <body>
-  <form action="/test">
+  <form action="https://www.youtube.com/results">
+  <!-- <input type="hidden" name="results" /> --> 
+ 
     <div>
-      <label for="email">Введите email</label>
-      <input type="text" placeholder="Email пользователя" id="email">
+      <label for="text">Шо ишешь?</label>
+      <input
+        type="text"
+        placeholder="То шо ишешь" 
+        id="search_query"
+        name="search_query"
+        value="purpleschool"
+      />
+    <!--    
     </div>
-    <div>
-      <label for="password">Накумекай пароль</label>
-      <input type="password" placeholder="Пароль пользователя" id="password">
-    </div>
-    <div>
-      <label for="birthDay">Введите дату рождения</label>
-      <input type="date" placeholder="Дата рождения" id="birthDay">
-    </div>
-
+    <label for="password">Накумекай пароль</label>
+    <input
+      type="password" 
+      placeholder="Пароль пользователя" 
+      id="password"
+      name="password"
+    />
+    <label for="birtyDate">Введите дату рождения</label>
+    <input 
+      type="date" 
+      placeholder="Дата рождения" 
+      id="birtyDate"
+      name="birtyDate"
+    /> -->
+    <button type="submit">Кнопка</button>
   </form>
 </body>
 </html>
