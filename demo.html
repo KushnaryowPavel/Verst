@@ -6,7 +6,7 @@
   <title>Demo</title>
 </head>
 <body>
-  <form action="https://www.youtube.com/results">
+  <form action="#">
     <div>
       <label for="query">Введите запрос</label>
       <input
@@ -16,7 +16,31 @@
         name="search_query"
       />
     </div>
-    <button type="submit">Що хотите?</button>
+    <div>
+      <label for="agree">Согласен с обработкой данных</label>
+      <input type="checkbox" name="agree" id="agree">
+    </div>
+    <div>
+      <label for="all">Поиск повсюду</label>
+      <input type="radio" name="search" id="all" value="all">
+    </div>
+    <div>
+      <label for="youtube">Поиск на Youtube </label>
+      <input type="radio" name="search" id="youtube" value="youtube">
+    </div>
+    <div>
+      <label for="topic">Тематика</label>
+      <select name="topic" id="topic">
+        <option value="1">Всё</option>
+        <optgroup label="Популярные">
+          <option value="2">Животные</option>
+          <option value="3">Разработка</option>
+        </optgroup>
+
+        <option value="4" selected>Что-то ещё</option>
+      </select>
+    </div>
+    <button>Що хотите?</button>
   </form>
 </body>
 </html>
