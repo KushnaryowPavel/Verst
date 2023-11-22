@@ -5,41 +5,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Drafts</title>
 </head>
-<header>
-  <h1>Свяжитесь со мной</h1>
-</header>
 <body>
-  <form action="#">
-    <div>
-      <label for="email">E-mail*</label>
-      <input 
-        type="email"
-        placeholder="123@gmail.com" 
-        name="email" 
-        id="email"
-        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
-    </div>
-    <div>
-      <label for="email">Telegram</label>
-      <input 
-        type="email"
-        placeholder="123@gmail.com"
-        name="email" 
-        id="email" >
-    </div>
-    <div>
-      <label for="topic">Тема*</label>
-      <select name="topic" id="topic">
-        <option value="1" selected>Приобретение курсов</option>
-        <option value="2">Что-то ещё 1</option>
-        <option value="3">Что-то ещё 2</option>
-      </select>
-    </div>
-    <div>
-      <label for="text">Коментарий</label>
-      <textarea name="text" id="text" cols="30" rows="10"></textarea>
-    </div>
-    <button>Отправить</button>
-  </form>
+  <main>
+    <h1>Свяжитесь со мной</h1>
+    <form action="#">
+      <div>
+        <label for="email">E-mail*</label>
+        <input 
+          type="email"
+          id="email"
+          name="email" 
+          placeholder="Введите E-mail" 
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" 
+          required />
+      </div>
+      <div>
+        <label for="telegram">Telegram</label>
+        <input 
+          type="text"
+          placeholder="Введите Telegram"
+          name="telegram" 
+          id="telegram" >
+      </div>
+      <div>
+        <label for="topic">Тема*</label>
+        <select name="topic" id="topic" required>
+          <option value="courses" selected>Приобретение курсов</option>
+          <option value="feedback">Обратная связь</option>
+          <option value="3">Что-то ещё 2</option>
+        </select>
+      </div>
+      <div>
+        <label for="comment">Коментарий</label>
+        <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+      </div>
+      <button>Отправить</button>
+    </form>
+  </main>
 </body>
 </html>
